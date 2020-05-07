@@ -1,6 +1,7 @@
 ###### This is a Python class at Institute for Applied Economic Research (Ipea) in Portuguese ###
 
-#### Este repositório contém o código demonstrativo e ilustrativo, de acordo com as aulas do *Mestrado em Desenvolvimentoe Políticas Públicas* do Instituto de Pesquisa Econômica Aplicada, o Ipea. 
+##### Este repositório contém o código demonstrativo e ilustrativo, de acordo com as aulas do 
+**Mestrado em Desenvolvimento e Políticas Públicas** do Instituto de Pesquisa Econômica Aplicada, o Ipea. 
 
 ##### Se você é aluno do curso, espere até que o conteúdo tenha sido dado em aula, antes de verificar o código.
 ##### Código suplementar para a disciplina Python para Modelagem Baseada em Agentes
