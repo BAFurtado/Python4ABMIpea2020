@@ -6,4 +6,3 @@ def print_sentences():
     print('Adoro Python')
 
 print_sentences()
-
