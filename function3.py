@@ -3,7 +3,7 @@
 
 
 def soma(a, b):
-    print('A soma é: ', a + b)
+    return a + b
 
 
 def soma_formatada(a, b):
