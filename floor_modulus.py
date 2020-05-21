@@ -8,3 +8,4 @@ horas = entrada // 60
 minutos = entrada % 60
 
 print(f'{entrada} minutos são {horas} horas e {minutos} minutos.')
+
