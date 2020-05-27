@@ -11,6 +11,7 @@ License: http://creativecommons.org/licenses/by/4.0/
 
 
 def do_twice(funcao, argumento):
+
     """Runs a function twice.
 
     func: function object
