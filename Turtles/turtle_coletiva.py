@@ -1,5 +1,5 @@
 import turtle
-import my_first_agent
+from Turtles import my_first_agent
 
 
 def passo(agente):

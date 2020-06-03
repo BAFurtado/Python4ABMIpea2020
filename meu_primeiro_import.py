@@ -1,9 +1,8 @@
 import meu_primeiro_exercicio
-import function5b
-import function1
-import Tres_ponto_um_ThinkPython
+from functions import function1, function5b
+import string_justify
 
-Tres_ponto_um_ThinkPython.right_justify('teste2')
+string_justify.right_justify('teste2')
 
 # formula area triangulo: 2 parametros: base e a altura
 print(meu_primeiro_exercicio.area_triangulo(2, 4))
