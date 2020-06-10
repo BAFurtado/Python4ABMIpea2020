@@ -1,9 +1,9 @@
 import random
 
 
-def generate():
+def generate(size=9):
     l = list()
-    for i in range(9):
+    for i in range(size):
         l.append(random.randint(0, 10))
     return l
 
@@ -20,7 +20,6 @@ def mediana(lst):
     lst.sort()
     indice_meio = int(len(lst)/2)
     return lst[indice_meio]
-
 
 
 if __name__ == '__main__':
