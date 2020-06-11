@@ -1,10 +1,10 @@
 import random
 
 
-def generate(size=9):
+def generate(size=100):
     l = list()
     for i in range(size):
-        l.append(random.randint(0, 10))
+        l.append(random.randint(0, 1))
     return l
 
 
