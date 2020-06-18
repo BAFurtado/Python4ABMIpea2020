@@ -2,6 +2,7 @@
     Exemplos de persistência
 
 """
+import numpy as np
 
 
 def first():
@@ -72,12 +73,19 @@ def salvar_soma(valor):
         handler.write(f'{valor}')
 
 
+def salvar_xml():
+    lst = np.random.random(10)
+    with open('arquivo.xml', 'w') as handler:
+        for i in lst:
+            handler.write(f'<h1>{i}</h1>\n')
+
 
 if __name__ == '__main__':
     # first()
     # second()
     # numbers()
-    r = reading('persistence/numeros.csv')
-    ll = recover_list(r)
-    soma = sum_list(ll)
-    salvar_soma(soma)
+    # r = reading('persistence/numeros.csv')
+    # ll = recover_list(r)
+    # soma = sum_list(ll)
+    # salvar_soma(soma)
+    salvar_xml()
