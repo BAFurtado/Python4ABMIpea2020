@@ -1,7 +1,5 @@
 import json
 
-from my_first_file import reading, recover_list
-
 db = {'data': '2020-06-24', 'hora': '18:30', 'objeto': 'lista_exercicio_1_completa'}
 
 

@@ -1,7 +1,5 @@
 import pickle
 
-from my_first_file import reading, recover_list
-
 
 def save_pickle(ob):
     with open('my_first_serialized_python_obj', 'wb') as f:

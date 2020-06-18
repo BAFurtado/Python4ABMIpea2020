@@ -16,7 +16,7 @@ def first():
 
 
 def second():
-    file = 'persistence/meu_segundo_arquivo.txt'
+    file = 'meu_segundo_arquivo.txt'
     # Lembrando que 'a' é append... então ele adiciona novas linha, não apaga o texto anterior
     with open(file, 'a') as f:
         f.write('This is my second saved output\n')
@@ -32,7 +32,7 @@ def numbers():
         print(i)
         print(i ** i)
 
-    with open('persistence/numeros.csv', 'a') as f:
+    with open('numeros.csv', 'a') as f:
         # Se eu coloco ';' como separador e salvo em CSV, o EXCEL abre direto...
         for each in l:
             f.write('{};'.format(str(each)))
