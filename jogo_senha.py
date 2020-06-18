@@ -1,7 +1,13 @@
+""" Vamos usar esse jogo como exemplo de entrada de um parâmetro pelo terminal
+
+"""
+import sys
 import random
+# datetime.datetime.now()
 
 
 def main(tamanho=3):
+    # t0 = now
     # 1. Comecei com uma string vazia
     segredo = ''
     # 2. Adicionei um número aleatório entre 0 e 9, transformado em string, 4x.
@@ -22,12 +28,14 @@ def main(tamanho=3):
             print('Parabéns, você é um grande adivinho!!!')
             print(f'Você acertou em {tentativas} tentativas')
             print(f'Voce chutou {chute} e o segredo era {segredo}')
+            # tf = depois
             em_jogo = False
         else:
             print(f'Você acertou {acertos} dígitos e errou {erros}')
+
         if chute == 'socorro':
             break
 
 
 if __name__ == '__main__':
-    main()
+    main(int(sys.argv[1]))
