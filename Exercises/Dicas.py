@@ -8,6 +8,21 @@ import random
 from string import ascii_letters as letters
 from string import ascii_lowercase, ascii_uppercase
 
+# DICAS II. Novas correções
+# 1. Façam sempre FUNÇÕES. Fica reutilizável. É o jeito certo de lidar com a memória.
+# Para checar se KEY está presente em um dicionário
+
+a = {'a': 1, 'b': 2}
+'a' in a
+
+# 2. Observem as informações da PyCharm sobre PEP (dois espaços antes de uma função, por exemplo).
+# O código fica mais fácil de ler.
+
+# 3. Não se esqueçam de usar o '__main__'... também fica reutilizável o código depois.
+
+# 4. Bem legal a resolução do Diego do exercício 14
+
+
 
 def manipulate_letters_easily():
     vogais = 'aeiou'
