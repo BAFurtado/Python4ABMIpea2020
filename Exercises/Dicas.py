@@ -8,7 +8,8 @@ import random
 from string import ascii_letters as letters
 from string import ascii_lowercase, ascii_uppercase
 
-# DICAS II. Novas correções
+# DICAS II. Novas correções ########################################################################################
+
 # 1. Façam sempre FUNÇÕES. Fica reutilizável. É o jeito certo de lidar com a memória.
 # Para checar se KEY está presente em um dicionário
 
@@ -20,7 +21,23 @@ a = {'a': 1, 'b': 2}
 
 # 3. Não se esqueçam de usar o '__main__'... também fica reutilizável o código depois.
 
-# 4. Bem legal a resolução do Diego do exercício 14
+# 4. Bem legal a resolução do Diego do exercício 14. Neste folder
+
+# 5. Tinha um exercício que repete a mesma linha 16 vezes. Seria melhor utilizar um LOOP
+
+# 6. Dois alunos usaram a função built-in max, min
+
+# 7. Vários usaram f-string. Ótimo!
+
+dicionario = {'a': 5, 'b': 10, 'e': 15, 'c': 20, 'i': 25, 'd': 30, 'o': 35, 'f': 40, 'u': 45, 'g': 50}
+
+# 8. Teve colega que usou Ipython. É uma boa estrutura para demonstrar código, resultado, código, resultado.
+
+# 9. Teve função com bons nomes: "def bombril(utilidades):"
+
+# 10. Teve colega também que orientou bem o usuário, com prints bastante ilustrativos...
+def max_min_valor(dicionario):
+    print(f'O valor máximo do dicionário é: {max(dicionario.values())}')
 
 
 
