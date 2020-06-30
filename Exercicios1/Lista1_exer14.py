@@ -1,5 +1,6 @@
 #Exercício 14
 
+
 def contador(texto):
 
     lista_contada = []

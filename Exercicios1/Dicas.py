@@ -13,6 +13,11 @@ from string import ascii_lowercase, ascii_uppercase
 # 1. Façam sempre FUNÇÕES. Fica reutilizável. É o jeito certo de lidar com a memória.
 # Para checar se KEY está presente em um dicionário
 
+
+# def function1():
+#     pass
+
+
 a = {'a': 1, 'b': 2}
 'a' in a
 
@@ -21,17 +26,26 @@ a = {'a': 1, 'b': 2}
 
 # 3. Não se esqueçam de usar o '__main__'... também fica reutilizável o código depois.
 
+# if __name__ == '__main__':
+#     function1()
+
 # 4. Bem legal a resolução do Diego do exercício 14. Neste folder
 
 # 5. Tinha um exercício que repete a mesma linha 16 vezes. Seria melhor utilizar um LOOP
 
+for i in range(16):
+    print(i)
+
 # 6. Dois alunos usaram a função built-in max, min
+# max(d.values())
+# d = {'a': 1, 'z': 200}
 
 # 7. Vários usaram f-string. Ótimo!
 
 dicionario = {'a': 5, 'b': 10, 'e': 15, 'c': 20, 'i': 25, 'd': 30, 'o': 35, 'f': 40, 'u': 45, 'g': 50}
-
+print(f'{2 * 8}')
 # 8. Teve colega que usou Ipython. É uma boa estrutura para demonstrar código, resultado, código, resultado.
+
 
 # 9. Teve função com bons nomes: "def bombril(utilidades):"
 

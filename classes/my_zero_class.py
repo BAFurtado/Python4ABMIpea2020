@@ -1,4 +1,4 @@
-""" Exemplo de class
+''""" Exemplo de class
 """
 
 # Começa com letra maiúscula
