@@ -7,7 +7,7 @@ import time
     '''
 
 # Ler o arquivo
-d = pd.read_csv('pandas/alugueis.csv', sep=';')
+d = pd.read_csv('alugueis.csv', sep=';')
 # Lista as cinco primeiras linhas da base
 d.head()
 d.columns
@@ -81,10 +81,10 @@ l.loc[l.bairro == 'Asa Sul', :].median()
 
 # Generalizando para os 10 primeiros bairros
 # Number formatting
-# pd.options.display.float_format = '{:,.2f}'.format
+pd.options.display.float_format = '{:,.2f}'.format
 for b in l.bairro.value_counts().head(10).index:
     print(f'Bairro {b} __________________________')
-    print('{:,.2f}'.format(l.loc[l.bairro == b, :].mean()))
+    print(l.loc[l.bairro == b, :].mean())
     time.sleep(10)
 
 # Groupby
