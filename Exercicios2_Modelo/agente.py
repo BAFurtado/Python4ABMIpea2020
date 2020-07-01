@@ -7,6 +7,7 @@ class Agent:
         # nome, idade
         # TODO: criar de saída uma conta para esse agente
         self.conta = Conta(0)
+        self.experiencia = 0
 
 
 if __name__ == '__main__':

@@ -25,6 +25,7 @@ class Simulacao:
 
     def run_model(self):
         # TODO: fazer um loop com os agentes e comprar nas lojas
+        # 1. Vai ter que visitar a loja, faz retirada (esta no cliente) e ganha experiencia (loja)
         pass
 
 
