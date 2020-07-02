@@ -3,7 +3,8 @@ from Exercicios2_Modelo.loja import Loja
 
 
 class Agent:
-    def __init__(self):
+    def __init__(self, id):
+        self.id = id
         # nome, idade
         # TODO: criar de saída uma conta para esse agente
         self.conta = Conta(0)
@@ -12,9 +13,9 @@ class Agent:
 
 if __name__ == '__main__':
     big_box = Loja('big_box')
-    xisto = Agent()
+    xisto = Agent(0)
     # Teste de agente que verifica a funcionalidade do deposito
-    fredegonda = Agent()
+    fredegonda = Agent(1)
     fredegonda.conta.deposito(1000)
     # Código passo-a-passo, seguido do código direto
     # bolso_da_loja = fredegonda.conta.retirada(1000)

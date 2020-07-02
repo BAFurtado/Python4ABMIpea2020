@@ -14,17 +14,23 @@ class Loja:
 
     def visita_cliente(self):
         # TODO: será necessário verificar se a capacidade já chegou a zero!
-        # if self.capacidade <= 0: alternativamente, while self.capacidade >= 0, aceite clientes novos
+        if self.capacidade >= 0:
+            self.capacidade -= 1
+            return True
+        else:
+            return False
+            #alternativamente, while self.capacidade >= 0, aceite clientes novos
         # return False (se não aceita capacidade). O return, break saem da função/while
         # TODO: continuar
-        self.capacidade -= 1
-        return True
 
-    def ganha_experiencia(self):
+    def oferece_experiencia(self):
         # Experiencia, nesse caso, refere-se à experiência do cliente ao usufruir do produto.
         # TODO: alguma hora, o agente vai visitar e deve-lhe ser retornado self.experience
         # TODO: altera a experiencia de acordo com a capacidade
-        pass
+        return self.experiencia
+
+    def __repr__(self):
+        return self.id
 
 
 if __name__ == '__main__':
