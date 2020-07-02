@@ -7,7 +7,10 @@ import time
     '''
 
 # Ler o arquivo
-d = pd.read_csv('alugueis.csv', sep=';')
+try:
+    d = pd.read_csv('alugueis.csv', sep=';')
+except FileNotFoundError:
+    d = pd.read_csv('pds/alugueis.csv', sep=';')
 # Lista as cinco primeiras linhas da base
 d.head()
 d.columns
@@ -71,25 +74,29 @@ l = l.rename(columns={'neighborhood': 'bairro', 'expenses': 'condominio', 'parki
 l.bairro.unique()
 
 # Imóveis por bairro
+# variáveis categóricas (nome do bairro, string)
 l.bairro.value_counts().head(20)
 
 print('Metade dos {} bairros tem até {} observações'.format(len(l.bairro.value_counts()),
                                                             l.bairro.value_counts().quantile(.5)))
 
 # Retrato do Guará!
-l.loc[l.bairro == 'Asa Sul', :].median()
+l.loc[l.bairro == 'Guara I', :].median()
 
 # Generalizando para os 10 primeiros bairros
 # Number formatting
 pd.options.display.float_format = '{:,.2f}'.format
 for b in l.bairro.value_counts().head(10).index:
     print(f'Bairro {b} __________________________')
-    print(l.loc[l.bairro == b, :].mean())
-    time.sleep(10)
+    print(l.loc[l.bairro == b, :].median())
+    time.sleep(8)
 
 # Groupby
 bairros = l.groupby('bairro').agg('mean')
 bairros.head(10)
+
+bairros_n_rooms = l.groupby(['bairro', 'n_rooms']).agg('mean')
+bairros_n_rooms.loc['Guara II']
 
 bairros = l.groupby('bairro').agg(['mean', 'count'])
 

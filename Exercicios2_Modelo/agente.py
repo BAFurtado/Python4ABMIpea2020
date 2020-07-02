@@ -26,4 +26,3 @@ if __name__ == '__main__':
     # 3. Segundo parenteses fredegonda.conta.retirada(10). Diminui o saldo (que está guardado) e retorna 10.
     # 4. big_box.conta.deposito(10)
     big_box.conta.deposito(fredegonda.conta.retirada(big_box.custo_produto))
-
