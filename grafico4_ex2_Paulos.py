@@ -24,13 +24,17 @@ ps = pd.read_csv('/home/furtadobb/Documents/Professor/Aulas2020/Correcao_Exercic
 satis, saldo, custo = list(), list(), list()
 for i in range(len(ps)):
     if i % 3 == 0:
+        print(i)
         satis.append(ps.loc[i, 1])
     elif (i - 1) % 3 == 0:
+        print(i - 1)
         saldo.append(ps.loc[i, 1])
     elif (i - 2) % 3 == 0:
+        print(i - 2)
         custo.append(ps.loc[i, 1])
 
 plt.hist(satis, alpha=.2, color='red', bins=20)
+plt.show()
 
 plt.hist(custo, alpha=.2, color='blue', bins=20)
 plt.show()
