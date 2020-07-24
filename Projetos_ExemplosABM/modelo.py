@@ -4,8 +4,8 @@ import random
 from Projetos_ExemplosABM.motoristas import Motorista
 from Projetos_ExemplosABM.postos import Posto
 
-num_motoristas = 5
-num_postos = 3
+num_motoristas = 100
+num_postos = 8
 custo_inicial = 4
 rodadas = 2
 
@@ -37,8 +37,8 @@ class Simulacao:
             pass
         # Comportamento da demanda -- decisão de abastecer dos motoristas
         for m in self.motoristas:
-            posto_escolhido = m.calcular_distancia(self.postos)
-            print(posto_escolhido)
+            m.escolhe_posto(self.postos)
+            print(m.meu_posto)
         self.custo_combustivel = self.custo_combustivel * \
                                  random.choices(np.linspace(.9, 1.1, 10),
                                                 weights=[.01, .04, .1, .1, .25, .25, .1, .1, .04, .01], k=1)[0]

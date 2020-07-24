@@ -11,9 +11,15 @@ class Motorista:
         self.gasto = None
         self.preferencia = random.choices(['preco', 'distancia'], weights=[.8, .2], k=1)[0]
 
-    def escolhe_posto(self):
+    def escolhe_posto(self, postos):
         # Se a preferencia for preço, não preciso nem escolher a distância
-        pass
+        if self.preferencia == 'distancia':
+            return self.calcular_distancia(postos)
+        else:
+            # Exemplo de list comprehension
+            # [item for item in lista_items]
+            precos = [p.preco for p in postos]
+            self.meu_posto = postos[precos.index(min(precos))]
 
     def dirigir(self):
         print(self.meu_posto.preco * self.distancia)
@@ -29,7 +35,7 @@ class Motorista:
                 distancias.append(((posto.x - self.trabalho_x) ** 2 + (posto.y - self.trabalho_y) ** 2) ** .5)
         # Calculo distancia minima
         # Preciso retornar/descobrir qual é o posto mais perto para o meu caso
-        return postos[distancias.index(min(distancias))]
+        self.meu_posto = postos[distancias.index(min(distancias))]
 
     def __repr__(self):
         return f'Motorista {self.id}'
