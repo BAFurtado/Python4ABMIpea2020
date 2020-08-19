@@ -13,3 +13,6 @@
 
 ##### Think Python: http://greenteapress.com/thinkpython2/thinkpython2.pdf
 ##### Think Complexity: http://greenteapress.com/complexity2/thinkcomplexity2.pdf
+
+Exemplo de Trabalho Final
+1. https://github.com/pauloeam/programapython/blob/master/Python_Trabalho_Final.ipynb

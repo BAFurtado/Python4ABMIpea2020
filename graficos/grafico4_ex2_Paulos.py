@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-p_eam = pd.read_csv('/Correcao_Exercicios1/pauloeam/csv_cli.csv')
+p_eam = pd.read_csv('/Correcoes_Alunos/pauloeam/csv_cli.csv')
 p_eam.drop(p_eam.columns[0], axis=1, inplace=True)
 p_eam = p_eam.rename(columns={'Saldo Clientes Inicial': 'saldo_inicial', 'Saldo Clientes Final': 'saldo_final',
                               'Satisfação Clientes Inicial': 'satis_inicial',
@@ -18,7 +18,7 @@ plt.show()
 p_eam.hist()
 plt.show()
 
-ps = pd.read_csv('/Correcao_Exercicios1/PauloSavio/arquivo1.csv',
+ps = pd.read_csv('/Correcoes_Alunos/PauloSavio/arquivo1.csv',
                  sep=';', header=None)
 
 satis, saldo, custo = list(), list(), list()

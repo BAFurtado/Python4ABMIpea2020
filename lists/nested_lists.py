@@ -10,7 +10,7 @@ def nested_sum(lst):
 def nested_sum_varying_size(lst):
     # Essa função explicita o uso do par: TRY: tentativa, 4 espaços e EXCEPT tipo de erro, tenta outra coisa.
     # Além disso, essa função usa a função RECURSIVA.
-    total = 0
+    total = list()
     for i in lst:
         try:
             # Try integer

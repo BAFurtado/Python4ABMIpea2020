@@ -49,6 +49,5 @@ class Simulacao:
             self.roda_modelo()
 
 
-
 if __name__ == '__main__':
     minha_sim = Simulacao()
